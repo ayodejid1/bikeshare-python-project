@@ -128,14 +128,14 @@ def station_stats(df):
     start_time = time.time()
 
     # display most commonly used start station
-    muss = df['Start Station'].mode()[0]
+    ss = df['Start Station'].mode()[0]
     mc1 = df['Start Station'].value_counts()[0]
-    print('The most commonly used start station is the {}, \n with count:{}'.format(muss, mc1))
+    print('The most commonly used start station is the {}, \n with count:{}'.format(ss, mc1))
 
     # display most commonly used end station
-    mues = df['End Station'].mode()[0]
+    es = df['End Station'].mode()[0]
     mc2 = df['End Station'].value_counts()[0]
-    print('The most commonly used End station is the {}, \n with count:{}'.format(mues, mc2))
+    print('The most commonly used End station is the {}, \n with count:{}'.format(es, mc2))
 
     # display most frequent combination of start station and end station trip
     df['muses'] = (df['Start Station'] + "||" + df['End Station']).value_counts().idxmax()
