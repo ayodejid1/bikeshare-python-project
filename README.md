@@ -7,7 +7,7 @@
  
  - washington
  
- and was also scripted to be an interactive program that allows its users to explore the statistics.
+ and was also scripted to be an interactive program that allows its users to explore the statistics by filtering by city, month and day of week.
 
 ## List Of Software Used
 - **Vscode text editor**
